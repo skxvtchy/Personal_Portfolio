@@ -24,7 +24,7 @@ export default function NextLinks() {
       </a>
 
       <a
-        href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+        // href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
         className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gradient-to-b hover:from-[#f5f5f5] hover:to-gray-100"
         target="_blank"
         rel="noopener noreferrer"

@@ -22,12 +22,14 @@ export const MenuItem = ({
   item,
   icon,
   children,
+  link,
 }: {
   setActive: (item: string) => void;
   active: string | null;
   item: string;
   icon?: JSX.Element;
   children?: React.ReactNode;
+  link?: string;
 }) => {
   return (
     <div onMouseEnter={() => setActive(item)} className="relative ">
@@ -36,7 +38,9 @@ export const MenuItem = ({
         className="cursor-pointer text-gray-700 hover:text-gray-900 dark:text-white text-sm"
       >
         <span className="block sm:hidden">{icon}</span>
-        <span className="hidden sm:block">{item}</span>
+        <Link href={link}>
+          <span className="hidden sm:block">{item}</span>
+        </Link>
       </motion.p>
       {active !== null && (
         <motion.div

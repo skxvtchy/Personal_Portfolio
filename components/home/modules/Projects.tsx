@@ -22,6 +22,7 @@ import {
   IconAi,
   IconApi,
   IconFlame,
+  IconBrandTailwind,
   IconDatabase,
   IconFileTypeJs,
   IconBrandGraphql,
@@ -97,6 +98,7 @@ const items = [
       </div>
     ),
   },
+
   {
     title: "Chat Messaging Webapp",
     link: "https://github.com/skxvtchy/chat-messaging",
@@ -148,6 +150,30 @@ const items = [
         <IconApi className="h-5 w-5 text-neutral-500" />
         <IconBrandNodejs className="h-5 w-5 text-neutral-500" />
         <IconBrandTrello className="h-5 w-5 text-neutral-500" />
+      </div>
+    ),
+  },
+  {
+    title: "Exist",
+    link: "/exist",
+    description: "What am I doing",
+    header: (
+      <Skeleton>
+        <Image
+          src="/project_images/linkr.png"
+          alt="Project 4 Image"
+          width={600}
+          height={400}
+          className="rounded-xl object-cover"
+        />
+      </Skeleton>
+    ),
+    icon: (
+      <div className="flex space-x-2">
+        <IconBrandReact className="h-5 w-5 text-neutral-500" />
+        <IconBrandTypescript className="h-5 w-5 text-neutral-500" />
+        <IconBrandNodejs className="h-5 w-5 text-neutral-500" />
+        <IconBrandTailwind className="h-5 w-5 text-neutral-500" />
       </div>
     ),
   },

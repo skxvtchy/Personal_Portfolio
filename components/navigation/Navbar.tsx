@@ -96,49 +96,47 @@ function Navbar({ className }: { className?: string }) {
           </DialogContent>
         </Dialog>
 
-        <Link href="/">
-          <MenuItem
-            setActive={setActive}
-            active={active}
-            item="Home"
-            icon={
-              <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />
-            }
-          >
-            <div className="flex flex-col space-y-4 text-sm p-2">
-              <HoveredLink href="#">Lock in</HoveredLink>
-            </div>
-          </MenuItem>
-        </Link>
+        <MenuItem
+          setActive={setActive}
+          active={active}
+          item="Home"
+          icon={
+            <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />
+          }
+          link="/"
+        >
+          <div className="flex flex-col space-y-4 text-sm p-2">
+            <HoveredLink href="#">Lock in</HoveredLink>
+          </div>
+        </MenuItem>
 
         {/* <Link href="/projects"> */}
-        <Link href="/projects">
-          <MenuItem
-            setActive={setActive}
-            active={active}
-            item="Projects"
-            icon={
-              <IconCode className="h-4 w-4 text-neutral-500 dark:text-white" />
-            }
-          >
-            <div className="  text-sm grid grid-cols-1 gap-10 p-4">
-              {/* use this div for 2 columns of items */}
-              {/* <div className="  text-sm grid grid-cols-2 gap-10 p-4"> */}
-              <ProductItem
-                title="LINKR"
-                href="https://linkrapp.com/"
-                src="/project_images/linkr.png"
-                description="Mobile events app"
-              />
-              <ProductItem
-                title="Sentiment Analysis"
-                href="https://github.com/skxvtchy/sentiment_analysis"
-                src="/project_images/sentiment_ai.png"
-                description="Finbert Sentiment"
-              />
-            </div>
-          </MenuItem>
-        </Link>
+        <MenuItem
+          setActive={setActive}
+          active={active}
+          item="Projects"
+          icon={
+            <IconCode className="h-4 w-4 text-neutral-500 dark:text-white" />
+          }
+          link="/projects"
+        >
+          <div className="  text-sm grid grid-cols-1 gap-10 p-4">
+            {/* use this div for 2 columns of items */}
+            {/* <div className="  text-sm grid grid-cols-2 gap-10 p-4"> */}
+            <ProductItem
+              title="LINKR"
+              href="https://linkrapp.com/"
+              src="/project_images/linkr.png"
+              description="Mobile events app"
+            />
+            <ProductItem
+              title="Sentiment Analysis"
+              href="https://github.com/skxvtchy/sentiment_analysis"
+              src="/project_images/sentiment_ai.png"
+              description="Finbert Sentiment"
+            />
+          </div>
+        </MenuItem>
 
         <MenuItem
           setActive={setActive}
@@ -147,6 +145,7 @@ function Navbar({ className }: { className?: string }) {
           icon={
             <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />
           }
+          link="/"
         >
           <div className="flex flex-col space-y-4 text-sm  p-2">
             <HoveredLink href="mailto:Jamesli784@gmail.com">Email</HoveredLink>
